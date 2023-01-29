@@ -1,9 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View , SafeAreaView} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import Constants from "expo-constants";
-import ElementButton from './components/ElementButton';
+import ElementButton from './components/elementButton';
+
 
 
 export default function App() {
@@ -15,7 +15,55 @@ export default function App() {
           name = "Lithium"
           onPress = {() => console.log("works!")}
           backColor = "yellow"
-          underColor = "red"
+          symbol= "Li"
+          num1="3"
+          num2 ="7.0"
+          underColor= "red"
+          />
+        <ElementButton
+          name = "Sodium"
+          symbol="Na"
+          num1="11"
+          num2 = "22.98"
+          onPress = {() => console.log("works!")}
+          backColor = "yellow"
+          underColor= "red"
+          />
+          <ElementButton
+          name = "Potassium"
+          symbol="K"
+          num1="19"
+          num2 = "39.038"
+          onPress = {() => console.log("works!")}
+          backColor = "yellow"
+          underColor= "red"
+          />
+          <ElementButton
+          name = "Rubidium"
+          symbol="Rb"
+          num1="37"
+          num2 = "85.47"
+          onPress = {() => console.log("works!")}
+          backColor = "yellow"
+          underColor= "red"
+          />
+           <ElementButton
+          name = "Caesium"
+          symbol="Cs"
+          num1="55"
+          num2 = "132.91"
+          onPress = {() => console.log("works!")}
+          backColor = "yellow"
+          underColor= "red"
+          />
+          <ElementButton
+          name = "Francium"
+          symbol="Fr"
+          num1="87"
+          num2 = "223"
+          onPress = {() => console.log("works!")}
+          backColor = "yellow"
+          underColor= "red"
           />
     <View style = {styles.roundButton}></View>
     </ScrollView>
@@ -27,8 +75,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    paddingTop: 50,
-  
     
   },
   scrollView: {
@@ -39,11 +85,11 @@ const styles = StyleSheet.create({
   title:{
     marginHorizontal:10,
     fontWeight: 'bold',
-    fontSize: 50,
-    textDecorationLine: 'underline'
-  },
-
-  roundButton: {
+    fontSize: "40%",
+    textAlign: 'center',
     justifyContent: "center",
+    alignItems: "center",
+    textDecorationLine: 'underline'
   }
+
 });
