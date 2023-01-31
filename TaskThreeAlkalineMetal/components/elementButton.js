@@ -1,12 +1,11 @@
 import React from 'react';
-import { TouchableHighlight, Text, StyleSheet, Pressable, View } from 'react-native';
+import { TouchableHighlight, Text, StyleSheet, Pressable, View, TouchableOpacity } from 'react-native';
 
-function ElementButton({name, num1, num2, onPress, underColor, backColor, symbol}) {
+function ElementButton({name, num1, num2, onPress, backColor, symbol}) {
     return (
      // here is where we will put the code for our Button
-     <TouchableHighlight 
+     <TouchableOpacity
       onPress= {onPress}
-      underlayColor= {underColor}    // changes color when pressed
       style={[styles.button, {backgroundColor: backColor}]}>
         <View>
           <Text style={styles.symbol}>{symbol}</Text>
@@ -14,7 +13,7 @@ function ElementButton({name, num1, num2, onPress, underColor, backColor, symbol
           <Text style={styles.text}>{num1}</Text>
           <Text style={styles.text}>{num2}</Text>
         </View>
-     </TouchableHighlight>
+     </TouchableOpacity>
     );
 }
 

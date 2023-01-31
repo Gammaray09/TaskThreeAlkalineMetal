@@ -42,7 +42,7 @@ export default function App() {
             symbol= "Li"
             num1="3"
             num2 ="7.0"
-            underColor= "red"
+        
             />
           <ElementButton
             name = "Sodium"
@@ -51,7 +51,7 @@ export default function App() {
             num2 = "22.98"
             onPress = {() => console.log("works!")}
             backColor = {colors.lightRed}
-            underColor= "red"
+        
             />
             <ElementButton
             name = "Potassium"
@@ -60,7 +60,7 @@ export default function App() {
             num2 = "39.038"
             onPress = {() => console.log("works!")}
             backColor = {colors.lightBlue}
-            underColor= "red"
+      
             />
             <ElementButton
             name = "Rubidium"
@@ -69,7 +69,7 @@ export default function App() {
             num2 = "85.47"
             onPress = {() => console.log("works!")}
             backColor = {colors.lightGreen}
-            underColor= "red"
+
             />
             <ElementButton
             name = "Caesium"
@@ -78,7 +78,7 @@ export default function App() {
             num2 = "132.91"
             onPress = {() => console.log("works!")}
             backColor = {colors.lightPink}
-            underColor= "red"
+       
             />
             <ElementButton
             name = "Francium"
@@ -87,7 +87,7 @@ export default function App() {
             num2 = "223"
             onPress = {() => console.log("works!")}
             backColor = {colors.pink}
-            underColor= "red"
+         
             />
           </View>
     <View style = {styles.roundButton}></View>
