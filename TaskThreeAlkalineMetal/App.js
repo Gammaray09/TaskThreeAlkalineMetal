@@ -2,10 +2,10 @@ import { StatusBar } from 'expo-status-bar';
 import { ScrollView, StyleSheet, Text, View , SafeAreaView} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import Constants from "expo-constants";
-import ElementButton from './components/elementButton';
-import Title from './components/Title';
-import colors from './App/config/colors';
-import Icon from './components/Icon';
+import ElementButton from './app/components/ElementButton';
+import Title from './app/components/Title';
+import colors from './app/config/colors';
+import Icon from './app/components/Icon';
 
 
 
